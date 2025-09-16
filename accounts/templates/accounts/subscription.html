@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="p-3">
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col mx-auto mb-3">
+        <h2>My Subscription</h2>
+        <hr />
+        <p><b>Level:</b> {{ template_data.level }}</p>
+        <p><b>Total Spent:</b> ${{ template_data.total_spent }}</p>
+        <p>
+          Levels are based on lifetime spend:
+        </p>
+        <ul>
+          <li>Basic: less than $15</li>
+          <li>Medium: $15 to $30</li>
+          <li>Premium: more than $30</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %} 
